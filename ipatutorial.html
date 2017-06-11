@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Compile .ipa No Developer Account </title>
+<style>
+body {
+    background-color: #d9d9d9;
+}
+</style>
+<center>
+
+<h1>
+
+Step 1: Get A Project(Or Make Your Own...) I Will Be Using Extra_Recipe By Xerub <a href="https://github.com/xerub/extra_recipe" target="_blank">Available Here</a> But Use Whatever You Want.
+<img src="step1.png" alt="Step 1";">
+<br />
+<br />
+Step 2: In Finder; Go To Applications, Then Right Click XCode, Then Hit View Package Contents
+<br />
+<img src="step2.png" alt="Step 2";>
+<br />
+Step 3: Then Go To Contents, Developer, Platforms, iPhoneOS.platform, Developer, SDKs, iPhoneOS.sdk, Then Open SDKSettings.plist With XCode
+<br />
+<img src="step3.png" alt="Step 3";>
+<br />
+Step 4: You Should See A XCode Window Of The plist. Click the Arrow Beside DefaultProperties and Look For CODE_SIGNING_REQUIRED. Change The Value To NO and Hit Command-S
+<br />
+<img src="step4.png" alt="Step 4";>
+<br />
+Step 5: Open The .xcodeproj With XCode and Click The Name Of The Project In The Top Left. Go To Build Settings And Search Code Sign.
+<br />
+<img src="step5.png" alt="Step 5";>
+<br />
+Step 6: In The Section 'Signing' Click The Arrow Beside Code Signing Identity(If Not Automatically Done) And Set Any iOS SDK For Debug And Release To "Don't Code Sign"
+<br />
+<img src="step6.png" alt="Step 6";>
+<br />
+Step 7: In The Top Where It Shows The App; Choose "Generic iOS Device"
+<br />
+<img src="step7.png" alt="Step 7";>
+<br />
+Step 8: In The Top Menu(MacOS Bar) Choose Product-Archive
+<br />
+<img src="step8.png" alt="Step 8";>
+<br />
+Step 9: Wait A Minute For The App To Compile...
+<br />
+<img src="step9.png" alt="Step 9";>
+<br />
+Step 10: Right Click The Archive And Hit Open In Finder
+<br />
+<img src="step10.png" alt="Step 10";>
+<br />
+Step 11: You Are Now Probably Wondering "Hey! What! This isnt a ipa!"
+<br />
+And Your Right... Not Yet It Isnt.
+<br />
+Right Click The .xcarchive And Choose Show Package Contents.
+<br />
+Go To Products, Applications And Then There Is A .app Folder
+<br />
+Then Open iTunes And Drag The .app Into iTunes
+<br />
+<img src="step11.png" alt="Step 11";>
+<br />
+Step 12: In iTunes Right Click The Newly Made App And Hit "View In Finder" And You Have Found The .ipa!
+<br />
+<img src="step12.png" alt="Step 12";>
+<br />
+You Can Distribute This .ipa To Anyone And It Will Work With Cydia Impactor
+<br />
+<img src="step112.png" alt="Step 112";>
+<br />
+<br />
+Thanks For Reading And I Hope This Helped!
+</center>
+</head>
+<body>
+</body>
+</html>
